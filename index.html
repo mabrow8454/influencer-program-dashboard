@@ -374,7 +374,7 @@
 <!-- PASSWORD GATE -->
 <div id="pw-gate">
     <div class="pw-box">
-        <h1>Zapier Â· Influencer Marketing</h1>
+        <h1>Zapier Â&middot; Influencer Marketing</h1>
         <h2>Video & <span>Influencer ROI</span></h2>
         <div class="pw-input-wrap">
             <input type="password" id="pw-input" placeholder="Enter password" autocomplete="off" />
@@ -387,10 +387,10 @@
 <div class="app" id="app" style="display:none;">
     <div class="header">
         <div class="header-left">
-            <h1>Zapier Â· Influencer Marketing</h1>
+            <h1>Zapier Â&middot; Influencer Marketing</h1>
             <h2>Video & <span>Influencer ROI</span></h2>
         </div>
-        <div class="date-label" id="date-label">Feb 24 â Feb 26</div>
+        <div class="date-label" id="date-label">Feb 24 &ndash; Feb 26</div>
     </div>
     <div class="kpi-strip">
         <div class="kpi-card">
@@ -413,27 +413,27 @@
         <div class="chart-card">
             <div class="chart-header">
                 <div class="chart-title"><span class="dot blue"></span> Views</div>
-                <div class="chart-hint">Click a month â</div>
+                <div class="chart-hint">Click a month &rarr;</div>
             </div>
             <div class="chart-body"><div class="chart-canvas" id="chart-views"></div></div>
         </div>
         <div class="chart-card">
             <div class="chart-header">
                 <div class="chart-title"><span class="dot orange"></span> Bitly Clicks</div>
-                <div class="chart-hint">Click a month â</div>
+                <div class="chart-hint">Click a month &rarr;</div>
             </div>
             <div class="chart-body"><div class="chart-canvas" id="chart-clicks"></div></div>
         </div>
         <div class="chart-card">
             <div class="chart-header">
                 <div class="chart-title"><span class="dot green"></span> Zapier Conversions</div>
-                <div class="chart-hint">Click a month â</div>
+                <div class="chart-hint">Click a month &rarr;</div>
             </div>
             <div class="chart-body"><div class="chart-canvas" id="chart-convs"></div></div>
         </div>
     </div>
     <div class="footer">
-        <p>Source: <a href="#" id="table-link">Zapier Video & Influencer ROI table</a> Â· Last run <span id="last-run">2026-02-20</span></p>
+        <p>Source: <a href="#" id="table-link">Zapier Video & Influencer ROI table</a> Â&middot; Last run <span id="last-run">2026-02-20</span></p>
     </div>
 </div>
 
@@ -442,7 +442,7 @@
     <div class="drawer-header">
         <div class="drawer-top-row">
             <div class="drawer-title" id="drawer-title">March <span>2025</span></div>
-            <button class="drawer-close" onclick="closeDrawer()">â</button>
+            <button class="drawer-close" onclick="closeDrawer()">&times;</button>
         </div>
         <div class="drawer-kpis" id="drawer-kpis"></div>
         <div class="drawer-sort">
@@ -507,7 +507,7 @@ function goalHtml(actual, goal) {
     if (!goal) return '';
     const pct = Math.round((actual / goal) * 100);
     const cls = pct >= 100 ? 'on-track' : pct >= 50 ? 'behind' : 'at-risk';
-    const label = pct >= 100 ? pct + '% â' : pct + '% to goal';
+    const label = pct >= 100 ? pct + '% &#10003;' : pct + '% to goal';
     return '<div class="drawer-kpi-goal ' + cls + '">' + label + '</div>';
 }
 
